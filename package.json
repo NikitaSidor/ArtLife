@@ -1,0 +1,26 @@
+{
+    "name": "ArtLife",
+    "version": "1.0.0",
+    "description": "Сайт для студии цветов \"ОРХИДЕЯ\". Магазин принадлежит моему старшему брату",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "Даня Иванов", "Курсовой проект"
+    ],
+    "author": "Серебряков Никита",
+    "license": "ISC",
+    "dependencies": {
+        "browser-sync": "^2.27.10",
+        "del": "^6.1.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-cli": "^2.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-uglify-es": "^3.0.0",
+        "sass": "^1.53.0",
+        "swiper": "^8.3.2"
+    }
+}
