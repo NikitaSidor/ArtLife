@@ -1,0 +1,215 @@
+/* import base styles */ /* font-family:Inter */
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Thin.ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraLight.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-Black.ttf");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter/Inter-ExtraBold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+/* End font-family:Inter */
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.78rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 140%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  outline: 0;
+  border: 0;
+}
+button:active {
+  outline: 0;
+  border: 0;
+}
+
+.container {
+  width: 1185px;
+  padding: 0 15px;
+  margin: auto;
+}
+
+/* form */
+.btn-1 {
+  background: #2A94E2;
+  border-radius: 10px;
+  line-height: 3.5em;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 0 30px;
+}
+
+/* endform */
+/* header */
+/* endheader */
+/* slider */
+.slider {
+  position: relative;
+  background: #EEF3FA;
+  padding: 135px 0 70px;
+  font-size: 0.89rem;
+}
+.slider-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 880px;
+  z-index: 0;
+}
+.slider-img-gradient {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 880px;
+  background: -o-linear-gradient(330deg, #EEF3FA 40%, transparent);
+  background: linear-gradient(120deg, #EEF3FA 40%, transparent);
+}
+.slider img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
+  z-index: 0;
+}
+.slider .container {
+  position: relative;
+  top: 0;
+  z-index: 5;
+}
+.slider-text {
+  width: 600px;
+}
+.slider-text p {
+  font-size: 22px;
+  line-height: 35px;
+}
+.slider .info_us-shorts {
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+.slider .info_us-shorts li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.slider .info_us-shorts-number {
+  font-size: 80px;
+  font-weight: 300;
+}
+.slider .info_us-shorts-text {
+  max-width: 130px;
+  margin-left: 15px;
+  padding-top: 16px;
+  font-size: 16px;
+  line-height: 25px;
+}
+.slider-before_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+.slider-before_btn .img {
+  position: relative;
+  height: 73px;
+  width: 70px;
+}
+.slider-before_btn img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.slider-before_btn p {
+  max-width: 380px;
+}
+.slider .btn-1 {
+  margin-top: 2em;
+}
+
+/* endslider */
