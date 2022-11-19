@@ -6,3 +6,18 @@
     color: #fff;
     padding: 0 30px;
 }
+.btn-2 {
+    padding: 19px 20px 13px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    background: $gray;
+    width: 100%;
+    color: #000;
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background: $blue;
+    }
+}

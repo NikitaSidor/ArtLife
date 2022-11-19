@@ -70,6 +70,7 @@ html, body {
   width: 100%;
   padding: 0;
   margin: 0;
+  cursor: default;
 }
 
 h1 {
@@ -139,6 +140,22 @@ section .block_text-text {
   font-size: 1.1rem;
   color: #fff;
   padding: 0 30px;
+}
+
+.btn-2 {
+  padding: 19px 20px 13px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  background: #f6f6f6;
+  width: 100%;
+  color: #000;
+}
+.btn-2:hover {
+  cursor: pointer;
+  color: #fff;
+  background: #2A94E2;
 }
 
 /* endform */
@@ -332,19 +349,84 @@ section .block_text-text {
   height: 35px;
 }
 
-.catalog_block {
+.catalog_main {
   position: relative;
 }
-.catalog_block-blocks {
+.catalog_main-blocks {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  margin-bottom: 30px;
 }
-.catalog_block-blocks .card {
+.catalog_main-blocks .card {
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   background: #FFFFFF;
   border: 1px solid #f6f6f6;
+}
+.catalog_main-blocks .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-height: 300px;
+  height: 300px;
+  width: 100%;
+}
+.catalog_main-blocks .card-body {
+  padding: 30px 30px 16px;
+}
+.catalog_main-blocks .card-body h5 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0;
+  color: #000;
+}
+.catalog_main-blocks .card-body h5:hover {
+  color: #2A94E2;
+}
+.catalog_main-blocks .card-body .lot {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 22px;
+  color: #000;
+}
+.catalog_main-blocks .card-body_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.catalog_main-blocks .card-body_footer .price_size .price {
+  font-size: 33px;
+  line-height: 52px;
+}
+.catalog_main-blocks .card-body_footer .price_size .size {
+  font-size: 16px;
+  line-height: 25px;
+}
+.catalog_main-blocks .card-body_footer .apartsmens {
+  font-size: 16px;
+  line-height: 25px;
+}
+.catalog_main-blocks .card-body_footer .apartsmens .square {
+  margin-bottom: 19px;
+}
+.catalog_main-blocks .card:hover {
+  -webkit-box-shadow: 0px 0px 18px rgba(233, 80, 79, 0.25);
+          box-shadow: 0px 0px 18px rgba(233, 80, 79, 0.25);
 }
 
 /* endstyles */

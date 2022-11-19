@@ -66,15 +66,69 @@
 }
 
 .catalog {
-    &_block {
+    &_main {
         position: relative;
         &-blocks {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
+            margin-bottom: 30px;
             .card {
+                transition: box-shadow .5s;
                 background: #FFFFFF;
                 border: 1px solid $gray;
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    max-height: 300px;
+                    height: 300px;
+                    width: 100%;
+                }
+                &-body{
+                    padding: 30px 30px 16px;
+                    h5 {
+                        font-weight: 800;
+                        font-size: 22px;
+                        line-height: 32px;
+                        margin: 0;
+                        color:#000;
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                    .lot {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 23px;
+                        margin: 0 0 22px;
+                        color: #000;
+                    }
+                    &_footer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        .price_size{
+                            .price {
+                                font-size: 33px;
+                                line-height: 52px;
+                            }
+                            .size {
+                                font-size: 16px;
+                                line-height: 25px;
+                            }
+                        }
+                        .apartsmens{
+                            font-size: 16px;
+                            line-height: 25px;
+                            .square {
+                                margin-bottom: 19px;
+                            }
+                        }
+                    }
+                }
+                &:hover {
+                    box-shadow: 0px 0px 18px rgba(233, 80, 79, 0.25);
+                }
             }
         }
     }
