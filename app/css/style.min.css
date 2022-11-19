@@ -82,6 +82,7 @@ h1 {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 ul {
@@ -165,6 +166,11 @@ article + article {
   cursor: pointer;
   color: #fff;
   background: #2A94E2;
+}
+
+.block_name .name {
+  font-size: 12px;
+  line-height: 19px;
 }
 
 /* endform */
@@ -488,6 +494,8 @@ article + article {
      object-position: center;
   width: 130px;
   height: 106px;
+  border: 2px solid transparent;
+  padding: 1px;
 }
 .about_us-short-imgs img:hover {
   cursor: pointer;
@@ -503,6 +511,81 @@ article + article {
   height: -moz-max-content;
   height: max-content;
   border: none;
+}
+
+.our_direction-blocks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.our_direction-blocks .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 280px;
+  padding: 35px 50px 16px;
+  background: #fff;
+  border: 1px solid #2A94E2;
+  border-radius: 10px;
+  background: url(./../img/lines.svg) no-repeat bottom left;
+}
+.our_direction-blocks .card h5 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 32px;
+}
+.our_direction-blocks .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.our_direction-blocks .card-body .block_name .name {
+  opacity: 0.5;
+}
+.our_direction-blocks .card-body .block_name .block {
+  font-size: 16px;
+  line-height: 25px;
+}
+.our_direction-blocks .card-body .tel {
+  font-size: 25px;
+  line-height: 39px;
+}
+.our_direction-blocks .card-body .mail {
+  font-size: 16px;
+  line-height: 25px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+.our_direction-blocks .card-body .img {
+  position: relative;
+  width: 150px;
+  height: 135px;
+}
+.our_direction-blocks .card-body .img img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  height: 100%;
 }
 
 /* endstyles */

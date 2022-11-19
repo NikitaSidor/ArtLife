@@ -171,6 +171,8 @@
                 object-position: center;
                 width: 130px;
                 height: 106px;
+                border: 2px solid transparent;
+                padding: 1px;
                 &:hover {
                     cursor: pointer;
                     border: 2px solid #2A94E2;
@@ -181,6 +183,67 @@
                     width: 100%;
                     height: max-content;
                     border: none;
+                }
+            }
+        }
+    }
+}
+
+.our_direction {
+    &-blocks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 280px;
+            padding: 35px 50px 16px;
+            background: #fff;
+            border: 1px solid $blue;
+            border-radius: 10px;
+            background: url(./../img/lines.svg) no-repeat bottom left;
+            h5 {
+                margin: 0;
+                font-weight: 800;
+                font-size: 22px;
+                line-height: 32px;
+            }
+            &-body{
+                display: flex;
+                justify-content: space-between;
+                gap:30px;
+                align-items: flex-end;
+                .block_name {
+                    .name {
+                        opacity: .5;
+                    }
+                    .block {
+                        font-size: 16px;
+                        line-height: 25px;
+                    }
+                }
+                .tel {
+                    font-size: 25px;
+                    line-height: 39px;
+                }
+                .mail {
+                    font-size: 16px;
+                    line-height: 25px;
+                    text-decoration-line: underline;
+                }
+                .img {
+                    position: relative;
+                    width: 150px;
+                    height: 135px;
+                    img {
+                        position: absolute;
+                        object-fit: contain;
+                        object-position: top;
+                        width: 100%;
+                        height: 100%;
+                    }
                 }
             }
         }
