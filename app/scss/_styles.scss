@@ -1,0 +1,16 @@
+.quiz_block {
+    display: flex;
+    border: 3px solid $gray;
+    &-info {
+        padding: 43px 36px 19px;
+        flex: 1 1;
+    }
+    &-plus {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-width: 360px;
+        padding: 40px 42px 36px;
+        border-left: 3px solid $gray;
+    }
+}

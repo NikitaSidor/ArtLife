@@ -3,6 +3,8 @@
     background: $blue-white;
     padding: 135px 0 70px;
     font-size:0.89rem;
+    height: 880px;
+    overflow:hidden;
     &-img {
         position: absolute;
         top:0;
@@ -36,7 +38,7 @@
         z-index: 5;
     }
     &-text {
-        width: 600px;
+        width: 650px;
         p {
             font-size: 22px;            
             line-height: 35px;
