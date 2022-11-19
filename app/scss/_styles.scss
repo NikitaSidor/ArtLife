@@ -2,7 +2,6 @@
     display: flex;
     border: 3px solid $gray;
     &-info {
-        padding: 43px 36px 19px;
         flex: 1 1;
     }
     &-plus {
@@ -10,7 +9,73 @@
         flex-direction: column;
         justify-content: space-between;
         min-width: 360px;
-        padding: 40px 42px 36px;
         border-left: 3px solid $gray;
+    }
+    &-title {
+        padding: 26px 26px 20px;
+        line-height: 1;
+        border-bottom: 3px solid $gray;
+        h3 {
+            margin: 0;
+        }
+    }
+    &-questions {
+        padding: 26px 36px;
+        max-height: 286px;
+        height: 286px;
+    }
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        margin-left: 36px;
+        margin-right: 36px;
+        border-top: 2px solid $gray;
+        font-size: 16px;
+    }
+    &-next {
+        background: none;
+        font-size: 16px;
+        color: $blue;
+        svg {
+            margin-left: 16px;
+            path {
+                stroke: $blue;
+            }
+        }
+    }
+    &-plus {
+        margin: 0;
+        padding:  36px;
+        max-width: 280px;
+        li {
+            display: flex;
+            gap: 24px;
+            font-size: 16px;
+            line-height: 25px;
+            img {
+                min-width: 40px;
+                height: 35px;
+            }
+            svg {
+                min-width: 40px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+.catalog {
+    &_block {
+        position: relative;
+        &-blocks {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            .card {
+                background: #FFFFFF;
+                border: 1px solid $gray;
+            }
+        }
     }
 }

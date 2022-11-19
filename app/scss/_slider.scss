@@ -7,9 +7,9 @@
     overflow:hidden;
     &-img {
         position: absolute;
+        overflow:hidden;
         top:0;
         right: 0;
-        overflow: hidden;
         width: 100%;
         height: 880px;
         z-index: 0;
