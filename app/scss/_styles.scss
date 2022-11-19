@@ -133,3 +133,56 @@
         }
     }
 }
+
+.about_us {
+    &-short {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        &-text {
+            h3 {
+                font-weight: 800;
+                font-size: 35px;
+                line-height: 47px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+                &+p {
+                    margin-bottom: 15px;
+                }
+            }
+            .btn-1 {
+                width: 270px;
+                margin-top:34px;
+            }
+        }
+        &-imgs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            justify-content: space-between;
+            gap: 10px;
+            img {
+                object-fit: cover;
+                object-position: center;
+                width: 130px;
+                height: 106px;
+                &:hover {
+                    cursor: pointer;
+                    border: 2px solid #2A94E2;
+                }
+                &.active {
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    width: 100%;
+                    height: max-content;
+                    border: none;
+                }
+            }
+        }
+    }
+}

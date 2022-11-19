@@ -110,7 +110,7 @@ article {
   margin-top: 60px;
 }
 
-section:not(:nth-child(1)) {
+section:not(:first-child) {
   margin-top: 60px;
 }
 
@@ -132,6 +132,14 @@ section .block_text-text {
   line-height: 0.63em;
 }
 
+article + article {
+  margin-top: 60px;
+}
+
+.background-two {
+  background: #f6f6f6;
+}
+
 /* form */
 .btn-1 {
   background: #2A94E2;
@@ -140,6 +148,7 @@ section .block_text-text {
   font-size: 1.1rem;
   color: #fff;
   padding: 0 30px;
+  text-align: center;
 }
 
 .btn-2 {
@@ -427,6 +436,73 @@ section .block_text-text {
 .catalog_main-blocks .card:hover {
   -webkit-box-shadow: 0px 0px 18px rgba(233, 80, 79, 0.25);
           box-shadow: 0px 0px 18px rgba(233, 80, 79, 0.25);
+}
+
+.about_us-short {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.about_us-short-text h3 {
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 47px;
+}
+.about_us-short-text p {
+  font-size: 16px;
+  line-height: 25px;
+}
+.about_us-short-text p + p {
+  margin-bottom: 15px;
+}
+.about_us-short-text .btn-1 {
+  width: 270px;
+  margin-top: 34px;
+}
+.about_us-short-imgs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+      -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+          transform: matrix(-1, 0, 0, 1, 0, 0);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+.about_us-short-imgs img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 130px;
+  height: 106px;
+}
+.about_us-short-imgs img:hover {
+  cursor: pointer;
+  border: 2px solid #2A94E2;
+}
+.about_us-short-imgs img.active {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 4;
+  grid-column-end: 5;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: none;
 }
 
 /* endstyles */
