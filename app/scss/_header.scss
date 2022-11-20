@@ -1,0 +1,34 @@
+header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    padding: 0rem;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {color: inherit}
+    button {color: inherit    }
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        li{
+            transition: transform .1s;
+            &:hover {
+            transform: scale(1.02);
+        }}
+    }
+    .logo {
+        position: relative;
+        max-width: 140px;
+        max-height: 80px;
+        img {
+            object-fit: contain;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

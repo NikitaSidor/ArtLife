@@ -1,25 +1,47 @@
-.btn-1 {
-    background: $blue;
-    border-radius: 10px;
-    line-height: 3.5em;
-    font-size: 1.1rem;
-    color: #fff;
-    padding: 0 30px;
-    text-align: center;
-}
-.btn-2 {
-    padding: 19px 20px 13px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 26px;
-    background: $gray;
-    width: 100%;
-    color: #000;
-    &:hover {
-        cursor: pointer;
-        color: #fff;
+.btn {
+    &-1{
         background: $blue;
+        border-radius: 10px;
+        line-height: 3.5em;
+        font-size: 1.1rem;
+        color: #fff;
+        padding: 0 30px;
+        text-align: center;
+    }
+    &-2 {
+        padding: 19px 20px 13px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        background: $gray;
+        width: 100%;
+        color: #000;
+        &:hover {
+            cursor: pointer;
+            color: #fff;
+            background: $blue;
+        }
+    }
+    &-3 {
+        width: 272px;
+        height: 55px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
+        color: #000;
+    }
+    &-4 {
+        width: 272px;
+        height: 55px;
+        border: 1px solid #2A94E2;
+        border-radius: 5px;
+        background: transparent;
+        font-size: 16px;
+        line-height: 23px;
+        text-align: center;
     }
 }
 .block_name {
