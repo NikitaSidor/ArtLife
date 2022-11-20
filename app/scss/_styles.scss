@@ -142,24 +142,7 @@
         align-items: center;
         padding-top: 64px;
         padding-bottom: 64px;
-        &-text {
-            h3 {
-                font-weight: 800;
-                font-size: 35px;
-                line-height: 47px;
-            }
-            p {
-                font-size: 16px;
-                line-height: 25px;
-                &+p {
-                    margin-bottom: 15px;
-                }
-            }
-            .btn-1 {
-                width: 270px;
-                margin-top:34px;
-            }
-        }
+        
         &-imgs {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -188,7 +171,25 @@
         }
     }
 }
-
+.director-text,
+.about_us-short-text {
+    h3 {
+        font-weight: 800;
+        font-size: 35px;
+        line-height: 47px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 25px;
+        &+p {
+            margin-bottom: 15px;
+        }
+    }
+    .btn-1 {
+        width: 270px;
+        margin-top:34px;
+    }
+}
 .our_direction {
     &-blocks {
         display: grid;
@@ -231,7 +232,6 @@
                 .mail {
                     font-size: 16px;
                     line-height: 25px;
-                    text-decoration-line: underline;
                 }
                 .img {
                     position: relative;
@@ -247,5 +247,24 @@
                 }
             }
         }
+    }
+}
+.director {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-end;
+    padding-top: 64px;
+    &-text {
+        padding-bottom: 64px;
+        h5 {
+            margin-bottom: 25px;
+        }
+    }
+    &-img {
+        display: flex;
+        align-items: flex-end;
+        max-width: 445px;
     }
 }

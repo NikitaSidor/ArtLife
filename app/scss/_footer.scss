@@ -1,0 +1,28 @@
+footer {
+    background: #535860;
+    padding: 40px 0 30px;
+}
+.footer_body {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    &-general_info {
+        max-width: 400px;
+        font-size: 13px;
+        line-height: 20px;
+        &-time {
+            .name+.info {
+                margin-top: 9px;
+            }
+        }
+        &-address {
+            font-size: 16px;
+            line-height: 25px;
+            font-style: normal;
+        }
+        &-inn_ogrn {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
